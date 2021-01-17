@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc libremote_shoot.a  CMakeFiles/remote_shoot.dir/remote_shoot.cpp.obj
+D:\mingw64\bin\ranlib.exe libremote_shoot.a
