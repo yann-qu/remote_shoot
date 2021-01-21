@@ -114,18 +114,13 @@ double getCompensationRad_xyResistance(double target_x,double target_y,double ve
         C=1/sqrt(k_1*g)*atan(sqrt(k_1/g)*velocity_0*sin(theta_0+compensation_rad));
         max_y=1/k_1*log(1/cos(sqrt(k_1*g)*C));
 
-        //todo 计算实际命中点
-        //! 运动分为两段，前半部分是阻力模型，后半部分是抛物线模型
         if(time<=C){
             real_y=1/k_1*log(cos(sqrt(k_1*g)*(C-time))/cos(sqrt(k_1*g)*C));
         } else {
             real_y=max_y-0.5*g*(time-C)*(time-C);
         }
-        
 
         delta_H=target_y-real_y;
-
-        //todo 后半段打到
 
         // 更新角度和目标点
         temp_y+=delta_H;
