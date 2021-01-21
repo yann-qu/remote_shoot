@@ -65,7 +65,7 @@ double getCompensationRad_xResistance(double target_x,double target_y,double vel
 
 /**
  * @Date: 2021-01-21 23:17:33
- * @description: 通过x方向阻力模型计算射击补偿角
+ * @description: 通过xy方向阻力模型计算射击补偿角
  * @param double target_x: x方向的距离
  * @param double target_y: y方向的距离
  * @param double velocity_0: 子弹射速。可用上一发子弹射速来近似
